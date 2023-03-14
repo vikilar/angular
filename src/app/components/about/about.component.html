@@ -1,0 +1,9 @@
+<p>about works!</p>
+<div *ngFor="let item of ar; let odd=odd">
+   <div [ngClass]="odd?'odd':'even'">{{item.prod}} - {{item.price}}</div> 
+</div>
+<div *ngFor="let item of ar; let odd=odd">
+    <div [ngStyle]="{'background-color': odd ? 'yellow' : 'grey'}">{{item.prod}} - {{item.price}}</div> 
+ </div>
+
+ {{singleProd.prod}}
